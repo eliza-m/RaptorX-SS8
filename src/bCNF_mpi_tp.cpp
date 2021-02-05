@@ -1302,13 +1302,14 @@ void bCNF_Model::LoadData()
 			trainData.push_back(DATA[shuffle[i+num_tst]]);
 		}
 	}
+
 	//Show some labels and features
-	if(proc_id==0){
-	cerr<<"some training data\n";
-	cerr<<trainData[0]->obs_label[0]<<" "<<trainData[0]->obs_feature[0][0]<<" "<<trainData[0]->obs_feature[0][1]<<endl;
-	cerr<<trainData[0]->obs_label[1]<<" "<<trainData[0]->obs_feature[1][0]<<" "<<trainData[0]->obs_feature[1][1]<<endl;
-	
-	}
+	//if(proc_id==0){
+	//cerr<<"some training data\n";
+	//cerr<<trainData[0]->obs_label[0]<<" "<<trainData[0]->obs_feature[0][0]<<" "<<trainData[0]->obs_feature[0][1]<<endl;
+	//cerr<<trainData[0]->obs_label[1]<<" "<<trainData[0]->obs_feature[1][0]<<" "<<trainData[0]->obs_feature[1][1]<<endl;
+	//
+	//}
 }
 void bCNF_Model::LoadRetrainData()
 {
